@@ -141,12 +141,5 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-from django.core.mail import send_mail
 
-send_mail(
-    "Password Reset",
-    "Use this to reset password.",
-    "from@example.com",
-    ["jeffysajan9400.com"],
-    fail_silently=False,
-)
+

@@ -5,7 +5,7 @@ services:
     startCommand: "gunicorn locallibrary.wsgi:application"
     envVars:
       - key: DATABASE_URL
-        value: 'DBurl'
+        value: postgresql://local_library_of58_user:qdUUbIVOdd7MYE0xM8ygOhd49KqgVXto@dpg-cv9a6v8gph6c73ajtgvg-a/local_library_of58
       - key: SECRET_KEY
         generateValue: true
       - key: DEBUG
